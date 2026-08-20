@@ -10,7 +10,7 @@ import type { User } from '@expense-tracker/shared';
 import * as authApi from '../api/auth';
 import { clearToken, getToken, setToken } from '../api/http';
 
-interface AuthState {
+export interface AuthState {
   user: User | null;
   loading: boolean;
   login: (email: string, password: string) => Promise<void>;

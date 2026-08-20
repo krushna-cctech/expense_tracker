@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build:shared && npm run build -w @expense-tracker/pwa",
+  "outputDirectory": "src/pwa/dist",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}

@@ -38,7 +38,7 @@ Desktop.ini
 .idea/
 
 # agent
-.agent/
+.agents/
 docs/
 AGENTS.md
 workingrules.md

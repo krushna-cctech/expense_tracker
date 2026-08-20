@@ -1,0 +1,98 @@
+:root {
+  --text: #1a1a1a;
+  --muted: #6b7280;
+  --primary: #4f46e5;
+  --danger: #dc2626;
+  --success: #16a34a;
+  --border: #e5e7eb;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.popup {
+  width: 320px;
+  padding: 1rem;
+  color: var(--text);
+}
+
+.popup h1 {
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+}
+
+.popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.row {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.row label {
+  flex: 1;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+button.link {
+  background: none;
+  color: var(--primary);
+  padding: 0.2rem 0.4rem;
+}
+
+.error {
+  color: var(--danger);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.success {
+  color: var(--success);
+  font-size: 0.85rem;
+  margin: 0;
+}

@@ -6,6 +6,6 @@
     "types": ["vite/client", "webextension-polyfill"],
     "noEmit": true
   },
-  "include": ["src", "manifest.config.ts"],
+  "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
